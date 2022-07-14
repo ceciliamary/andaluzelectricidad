@@ -1,0 +1,422 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.html{
+    height: 100%;
+}
+/*body*/
+/*header*/
+.cuerpo {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "cabecera"  
+    "principal"  
+    "pie";
+    grid-template-columns: 100%;
+    background-color: mediumaquamarine;
+    color:darkslategrey;
+    font-family: 'Faustina', serif;
+}
+.navegacion ul li a{
+    color: powderblue;
+    text-decoration: overline;
+    list-style: none;
+    justify-content: center;
+}
+.cabecera{
+    background-color: rgb(0, 65, 139);
+    display: flex;
+    grid-area: cabecera;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.encabezado__lista__item {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 16px;
+    width: 200px;
+}
+.encabezado__lista {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h1{
+    display: flex;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Merienda', cursive;
+    font-weight: 100px;
+    margin: 30px;
+    height: 100px;
+    width: 600px;
+}
+/*main*/
+.principal{
+    grid-area: principal;
+    padding: 10px;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    width: 50px;
+}
+.imagen__logo{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    display: flex;
+}
+/*Index*/
+/* Boton Index*/
+.presentacion{
+    display: flex;
+    flex-direction: column;
+}
+.titulo__presentacion {
+    height: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Presentacion__fede {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Presentacion__fede__texto{
+    display: flex;
+    color: midnightblue;
+    line-height: 2;
+    text-align: left;
+    height: 40%;
+    padding: 20px;
+}
+.Presentacion__fede__imagen {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+/*.mihistoria__container idem Presentacion__fede__texto */
+.boton{
+    color: rgb(0, 255, 200); 
+    background-color: aquamarine;
+    display: flex;
+    width: fit-content;
+    border: solid 3px gray;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 30px auto;
+}
+.boton :hover{
+    transform: scale(1,5);
+    background-color: blanchedalmond;
+    transition: 3s;
+}
+.boton a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 600;
+    font-size: 20px;
+}
+/*footer*/
+.footer{
+    background-color: rgb(0, 65, 139);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    grid-area: pie;
+}
+.footer__lista{
+    display: flex;
+    list-style: none;
+    width: fit-content;
+}
+.footer__lista__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp {
+    width: 40px;
+}
+.facebook {
+    width: 40px;
+}
+.instagram {
+    width: 40px;
+}
+.piePagina { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    color: aqua;
+}
+/*electricidad*/
+/*subtitulo electricidad domiciliaria*/
+.titulo__electricidad{
+    height: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.electricidad__domic{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.electricidad__domic__texto {
+    color: blue;
+    display: flex;
+    line-height: 2;
+    text-align: left;
+    height: 40%;
+    padding: 20px;
+}
+.electricidad__domic__img{
+    height: 200px;
+    display: flex;
+    width: 300px;
+}
+/*Subtitulo electricidad comercial*/
+.electricidad__comer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.electricidad__comer__texto{
+    color: darkblue;
+    display: flex;
+    line-height: 2;
+    text-align: left;
+    height: 40%;
+    padding: 20px;
+}
+.electricidad__comer__img{
+    height: 200px;
+    display: flex;
+    width: 300px;
+}
+/*Subtitulo electricidad industrial*/
+.electricidad__indus {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.electricidad__indus__texto {
+    color: darkmagenta;
+    display: flex;
+    line-height: 2;
+    text-align: left;
+    height: 40%;
+    padding: 20px;
+}
+.electricidad__indus__img {
+    height: 200px;
+    display: flex;
+    width: 300px;
+}
+/*Refrigeracion*/
+.titulo__refrigeracion {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*titulo__refrigeracion__subtitulo* es el h2*/
+.titulo__refrigeracion__subtitulo__lista{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+
+}
+.textoRefrig{
+    color: blue;
+    line-height: 2;
+    text-align: left; 
+}
+/*Contacto*/
+.Formulario {
+    margin: 40px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.Formulario__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 300px;
+    border: solid 6px violet;
+    width: fit-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    line-height: 40px;
+    background-color: gray;
+}
+/*Galeria*/
+.galeria{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+/*letra*/
+.galeria{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+    text-align: justify;
+}
+.galeria__card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galeria__card__imagen{
+    width: 100%;
+    height: 200px;
+}
+.galeria__card p{
+    text-align: center;
+}
+/*.galeria__imagen {
+    height: 30vh;
+    width: 20vw;
+    object-fit: cover;
+}*/
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: azure;
+}
+@media screen and (max-width: 500px){ 
+    .cabecera{
+        background-color: rgb(0, 65, 139);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .encabezado__lista {
+        width: 100%;
+        display: flex;  
+        flex-direction: row; 
+        justify-content: center;
+        }  
+    .encabezado__lista__item {
+        margin: 20px 5px;
+        width: 100%;
+    }
+    h1{
+        font-size: 30px;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+    .Presentacion__fede{
+        flex-direction: column;
+    }
+    .Presentacion__fede__imagen {
+        width: 80%;
+        height: auto;
+    }
+    .footer__lista{
+    width: 100%;
+    justify-content: space-evenly;
+    }
+    .electricidad__domic{
+        flex-direction: column;
+    }    
+    .electricidad__comer{
+        flex-direction: column;
+    }
+    .electricidad__indus{
+        flex-direction: column;
+    }
+    .electricidad__domic__img{
+        width: 80%;
+        height: auto;
+    }
+    .electricidad__comer__img{
+        width: 80%;
+        height: auto;
+    }
+    .electricidad__indus__img{
+        width: 80%;
+        height: auto;
+    }
+}
+    /*}
+    .falso__carrousel{
+        width: 60%;
+        height: 500px;
+        margin: 15px auto;
+        border: solid 1px;
+        background-image: url(./imagenes/fede\ ecosan1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: carrousel 30s infinite;
+    }
+    @keyframes carrousel{ 
+        0%{
+            background-image: url(./imagenes/fede\ ecosan1.jpg);
+        }
+        10%{
+            background-image: url(./imagenes/instalacion\ comercial\ 2.jpg);
+        }
+        20%{
+            background-image: url(./imagenes/instalacion\ aires\ centro\ de\ testeo3.jpg);
+        }
+        30%{
+            background-image: url(./imagenes/camara\ industrial4.jpg);
+        }
+        40%{
+            background-image: url(./imagenes/fede\ grua5.jpg);
+        }
+        50%{
+            background-image: url(./imagenes/fede8.JPG);
+        }
+        60%{
+            background-image: url(./imagenes/fede9.jpg);
+        }
+        70%{
+            background-image: url(./imagenes/fede10.JPG);
+        }
+        80%{
+            background-image: url(./imagenes/fede\ grua5.jpg);
+        }
+        90%{
+            background-image: url(./imagenes/fede\ y\ chicho\ trabajando.JPG);
+        }
+        100%{
+            background-image: url(./imagenes/instalacion\ varios\ aires\ aeropuerto\ internacion\ exeiza.jpg);
+        }*/
