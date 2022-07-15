@@ -20,12 +20,12 @@
     color:darkslategrey;
     font-family: 'Faustina', serif;
 }
-.navegacion ul li a{
+/*.navegacion ul li a{
     color: powderblue;
     text-decoration: overline;
     list-style: none;
     justify-content: center;
-}
+}*/
 .cabecera{
     background-color: rgb(0, 65, 139);
     display: flex;
@@ -37,7 +37,6 @@
 .encabezado__lista__item {
     display: inline-block;
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin: 16px;
     width: 200px;
@@ -49,17 +48,27 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+.navbar-collapse{
+    flex-grow: initial;
+    flex-direction: column;
+}  
+.navbar-nav .nav-item .nav-link{
+    color:cyan;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 h1{
     display: flex;
     color: blanchedalmond;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     font-family:'Merienda', cursive;
     font-weight: 100px;
     margin: 30px;
     height: 100px;
     width: 600px;
 }
+
 /*main*/
 .principal{
     grid-area: principal;
@@ -136,20 +145,27 @@ h2{
 /*footer*/
 .footer{
     background-color: rgb(0, 65, 139);
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    display: flex; 
     grid-area: pie;
+    align-items: center;
+    width: 100%;
 }
+.footer__lista{
+width: 100%;
+align-items: center;
+justify-content: space-evenly;
+}
+
 .footer__lista{
     display: flex;
     list-style: none;
-    width: fit-content;
+    width:100%;
+    justify-content:space-between;
 }
 .footer__lista__item{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
 }
 .whatsapp {
     width: 40px;
@@ -159,13 +175,6 @@ h2{
 }
 .instagram {
     width: 40px;
-}
-.piePagina { 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    display: flex;
-    text-align: center;
-    color: aqua;
 }
 /*electricidad*/
 /*subtitulo electricidad domiciliaria*/
@@ -281,42 +290,22 @@ h2{
 }
 /*Galeria*/
 .galeria{
-    width: 70%;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
-    height: 80vh;
+    height: 80%;
 }
 /*letra*/
 .galeria{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: blue;
     text-align: justify;
 }
-.galeria__card{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .galeria__card__imagen{
-    width: 100%;
-    height: 200px;
-}
-.galeria__card p{
-    text-align: center;
-}
-/*.galeria__imagen {
-    height: 30vh;
-    width: 20vw;
-    object-fit: cover;
-}*/
-h4{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 15px;
-    color: azure;
+    width: 350px;
+    padding: 5px 5px 5px 5px;
+    height: 350px;
 }
 @media screen and (max-width: 500px){ 
     .cabecera{
@@ -349,8 +338,13 @@ h4{
         width: 80%;
         height: auto;
     }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
     .footer__lista{
     width: 100%;
+    align-items: center;
     justify-content: space-evenly;
     }
     .electricidad__domic{
@@ -375,48 +369,4 @@ h4{
         height: auto;
     }
 }
-    /*}
-    .falso__carrousel{
-        width: 60%;
-        height: 500px;
-        margin: 15px auto;
-        border: solid 1px;
-        background-image: url(./imagenes/fede\ ecosan1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        animation: carrousel 30s infinite;
-    }
-    @keyframes carrousel{ 
-        0%{
-            background-image: url(./imagenes/fede\ ecosan1.jpg);
-        }
-        10%{
-            background-image: url(./imagenes/instalacion\ comercial\ 2.jpg);
-        }
-        20%{
-            background-image: url(./imagenes/instalacion\ aires\ centro\ de\ testeo3.jpg);
-        }
-        30%{
-            background-image: url(./imagenes/camara\ industrial4.jpg);
-        }
-        40%{
-            background-image: url(./imagenes/fede\ grua5.jpg);
-        }
-        50%{
-            background-image: url(./imagenes/fede8.JPG);
-        }
-        60%{
-            background-image: url(./imagenes/fede9.jpg);
-        }
-        70%{
-            background-image: url(./imagenes/fede10.JPG);
-        }
-        80%{
-            background-image: url(./imagenes/fede\ grua5.jpg);
-        }
-        90%{
-            background-image: url(./imagenes/fede\ y\ chicho\ trabajando.JPG);
-        }
-        100%{
-            background-image: url(./imagenes/instalacion\ varios\ aires\ aeropuerto\ internacion\ exeiza.jpg);
-        }*/
+    
