@@ -27,7 +27,7 @@
     justify-content: center;
 }*/
 .cabecera{
-    background-color: rgb(0, 65, 139);
+    background-color: midnightblue;
     display: flex;
     grid-area: cabecera;
     width: 100%;
@@ -111,7 +111,7 @@ h2{
     color: midnightblue;
     line-height: 2;
     text-align: left;
-    height: 40%;
+    height: 30%;
     padding: 20px;
 }
 .Presentacion__fede__imagen {
@@ -132,7 +132,7 @@ h2{
     margin: 30px auto;
 }
 .boton :hover{
-    transform: scale(1,5);
+    transform: scale(1,4);
     background-color: blanchedalmond;
     transition: 3s;
 }
@@ -144,7 +144,7 @@ h2{
 }
 /*footer*/
 .footer{
-    background-color: rgb(0, 65, 139);
+    background-color:midnightblue;
     display: flex; 
     grid-area: pie;
     align-items: center;
@@ -154,13 +154,6 @@ h2{
 width: 100%;
 align-items: center;
 justify-content: space-evenly;
-}
-
-.footer__lista{
-    display: flex;
-    list-style: none;
-    width:100%;
-    justify-content:space-between;
 }
 .footer__lista__item{
     display: flex;
@@ -201,7 +194,7 @@ justify-content: space-evenly;
     padding: 20px;
 }
 .electricidad__domic__img{
-    height: 200px;
+    height: 300px;
     display: flex;
     width: 300px;
 }
@@ -222,7 +215,7 @@ justify-content: space-evenly;
     padding: 20px;
 }
 .electricidad__comer__img{
-    height: 200px;
+    height: 300px;
     display: flex;
     width: 300px;
 }
@@ -243,7 +236,7 @@ justify-content: space-evenly;
     padding: 20px;
 }
 .electricidad__indus__img {
-    height: 200px;
+    height: 300px;
     display: flex;
     width: 300px;
 }
@@ -257,10 +250,15 @@ justify-content: space-evenly;
 /*titulo__refrigeracion__subtitulo* es el h2*/
 .titulo__refrigeracion__subtitulo__lista{
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+.titulo__refrigeracion__subtitulo__lista :hover{
+        transform: scale(1,4);
+        background-color: blanchedalmond;
+        transition: 3s;
 
 }
 .textoRefrig{
@@ -289,24 +287,18 @@ justify-content: space-evenly;
     background-color: gray;
 }
 /*Galeria*/
-.galeria{
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 80%;
-}
 /*letra*/
 .galeria{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: blue;
     text-align: justify;
 }
 .galeria__card__imagen{
-    width: 350px;
+    display: flex;
+    width: 200px;
     padding: 5px 5px 5px 5px;
-    height: 350px;
+    height: 200px;
 }
+
 @media screen and (max-width: 500px){ 
     .cabecera{
         background-color: rgb(0, 65, 139);
