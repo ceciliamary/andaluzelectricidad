@@ -145,20 +145,20 @@ h2{
 /*footer*/
 .footer{
     background-color:midnightblue;
-    display: flex; 
+    display: flex;
     grid-area: pie;
     align-items: center;
     width: 100%;
+    height: 40px
 }
 .footer__lista{
 width: 100%;
+display: flex;
 align-items: center;
 justify-content: space-evenly;
 }
-.footer__lista__item{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
+footer__lista__item{
+    width: 60px;
 }
 .whatsapp {
     width: 40px;
