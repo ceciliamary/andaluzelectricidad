@@ -145,20 +145,11 @@ h2{
 /*footer*/
 .footer{
     background-color:midnightblue;
-    display: flex; 
+    display: flex;
+    justify-content: space-evenly;
     grid-area: pie;
     align-items: center;
     width: 100%;
-}
-.footer__lista{
-width: 100%;
-align-items: center;
-justify-content: space-evenly;
-}
-.footer__lista__item{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
 }
 .whatsapp {
     width: 40px;
@@ -332,7 +323,10 @@ justify-content: space-evenly;
     }
     .footer{
         display: flex;
-        flex-direction: column;
+        /*flex-direction: column;*/
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly; 
     }
     .footer__lista{
     width: 100%;
