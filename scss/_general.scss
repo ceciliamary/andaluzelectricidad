@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cuerpo {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "cabecera"  
+    "principal"  
+    "pie";
+    grid-template-columns: 100%;
+    background-color: mediumaquamarine;
+    color:darkslategrey;
+    font-family: 'Faustina', serif;
+}
