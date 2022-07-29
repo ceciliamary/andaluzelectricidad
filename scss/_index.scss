@@ -1,0 +1,29 @@
+.titulo__presentacion {
+    height: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Presentacion__fede {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Presentacion__fede__texto{
+    display: flex;
+    color: midnightblue;
+    line-height: 2;
+    text-align: left;
+    height: 30%;
+    padding: 20px;
+}
+.Presentacion__fede__imagen {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+

@@ -2,28 +2,107 @@
   margin: 0;
   padding: 0; }
 
+.html {
+  height: 100%; }
+
 .cuerpo {
   font-family: 'Faustina', serif;
   margin: 0 auto;
-  background-color: #66cdaa; }
+  background-color: #65cdaa;
+  color: #2f4f4f;
+  display: grid;
+  grid-template-areas: "cabecera"   "principal"   "pie";
+  grid-template-columns: 100%; }
 
 .cabecera {
-  background-color: #191970; }
-  .cabecera.navbar-collapse {
-    flex-grow: initial;
-    flex-direction: column; }
-  .cabecera.navbar-nav .nav-item .nav-link {
-    color: cyan;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif; }
+  background-color: #191971; }
 
-h1 {
+.navbar-collapse {
+  flex-grow: initial;
+  flex-direction: column; }
+
+.navbar-nav .nav-item .nav-link {
+  color: #65cdaa;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.container-fluid {
   display: flex;
   color: blanchedalmond;
   text-align: center;
   font-size: 45px;
-  font-family: 'Merienda', cursive;
+  font-family: "Merienda", cursive;
   font-weight: 100px;
   margin: 30px;
   height: 100px;
   width: 600px; }
+
+.imagen__logo {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  display: flex; }
+
+.principal {
+  grid-area: principal;
+  padding: 10px; }
+
+.footer {
+  background-color: #191971;
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: pie;
+  align-items: center;
+  width: 100%; }
+  .footer__redes {
+    width: 40px; }
+
+.titulo__presentacion {
+  height: 100px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.Presentacion__fede {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+
+.Presentacion__fede__texto {
+  display: flex;
+  color: midnightblue;
+  line-height: 2;
+  text-align: left;
+  height: 30%;
+  padding: 20px; }
+
+.Presentacion__fede__imagen {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px; }
+
+.boton, .boton .boton__electricidad, .boton .boton__refrigeracion {
+  display: flex;
+  width: fit-content;
+  border: solid 3px gray;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 30px auto; }
+  .boton_boton:hover {
+    transform: scale(1, 4);
+    background-color: blanchedalmond;
+    transition: 3s; }
+  .boton a, .boton .boton__electricidad a, .boton .boton__refrigeracion a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 600;
+    font-size: 20px; }
+  .boton .boton__electricidad {
+    background-color: #65cdaa; }
+  .boton .boton__refrigeracion {
+    background-color: #134e4e; }

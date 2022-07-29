@@ -1,0 +1,28 @@
+.boton{
+    display: flex;
+    width: fit-content;
+    border: solid 3px gray;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 30px auto;
+
+&_boton:hover{
+    transform: scale(1,4);
+    background-color: blanchedalmond;
+    transition: 3s;
+ }
+ a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 600;
+    font-size: 20px;
+}
+.boton__electricidad{
+@extend .boton;
+background-color: map-get($colores, "color-principal");
+}
+.boton__refrigeracion{
+@extend .boton;
+background-color: map-get($colores, "color-secundario");   
+}
+}

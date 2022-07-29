@@ -1,3 +1,11 @@
-$color-principal: #66cdaa;
-$color-secundario: #2f4f4f;
-$color-terciario: #191970;
+
+$colores: (
+    "color-principal": hsl(160, 51%, 60%),
+    "color-secundario": hsl(180, 60%, 19%),
+    "color-terciario": hsl(240, 64%, 27%)
+);
+$tipografia: (
+    "letra-principal": ('Merienda', cursive),
+    "letra-secundaria": ('Faustina', serif),
+    "letra-terciaria": (Arial, Helvetica, sans-serif)
+);
