@@ -1,29 +1,42 @@
+@import "./mixin";
+
 .titulo__presentacion {
-    height: 100px;
-    width: 60%;
+    height: 80px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+h2 {
+    @include h (hsl(0, 0%, 0%), (30px));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3 {
+    @include h (hsl(240, 100%, 50%), (20px));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
 .Presentacion__fede {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-}
-.Presentacion__fede__texto{
-    display: flex;
-    color: midnightblue;
-    line-height: 2;
-    text-align: left;
-    height: 30%;
-    padding: 20px;
-}
-.Presentacion__fede__imagen {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
-}
 
+    &__texto {
+        display: flex;
+        color: midnightblue;
+        line-height: 30px;
+        text-align: left;
+        height: 30%;
+        padding: 20px;
+    }
+
+    &__imagen {
+        display: flex;
+        width: 250px;
+        height: 250px;
+        border-radius: 8px;
+    }
+}

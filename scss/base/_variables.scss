@@ -1,11 +1,16 @@
-
 $colores: (
     "color-principal": hsl(160, 51%, 60%),
-    "color-secundario": hsl(180, 60%, 19%),
-    "color-terciario": hsl(240, 64%, 27%)
+    "color-secundario": hsl(180, 40%, 26%),
+    "color-terciario": hsl(240, 64%, 27%),
+    "color-cuarto": hsl(36, 100%, 90%),
+    "color-quinto": hsl(0, 0%, 0%),
+    "color-sexto": hsl(240, 100%, 50%),
+    "color-septimo": hsl(300, 76%, 72%),
+    "color-octavo": rgb(0, 255, 200),
+    "color-noveno": hsl(125, 100%, 75%)
 );
 $tipografia: (
-    "letra-principal": ('Merienda', cursive),
-    "letra-secundaria": ('Faustina', serif),
-    "letra-terciaria": (Arial, Helvetica, sans-serif)
+    "letra-principal": (Georgia, 'Times New Roman', Times, serif),
+    "letra-secundaria": (Arial, Helvetica, sans-serif),
+    "letra-terciaria": ('Merienda', cursive)
 );

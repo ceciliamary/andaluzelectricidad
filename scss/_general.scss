@@ -1,65 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.html{
+
+.html {
     height: 100%;
 }
-.cuerpo{
-    font-family: 'Faustina', serif;
+
+.cuerpo {
     margin: 0 auto;
-    background-color: map-get($colores, "color-principal");
-    color:#2f4f4f;
     display: grid;
-    grid-template-areas: 
-    "cabecera"  
-    "principal"  
-    "pie";
+    grid-template-areas:
+        "cabecera"
+        "principal"
+        "pie";
     grid-template-columns: 100%;
-    }
-.cabecera{
-    background-color: map-get($colores, "color-terciario");;
-    }
-.navbar-collapse{
-        flex-grow: initial;
-        flex-direction: column;
-    }  
-.navbar-nav .nav-item .nav-link{
+    background-color: map-get($colores, "color-principal");
+    color: map-get($colores, "color-secundario");
+    font-family: map-get($tipografia, "letra-principal");
+}
+
+.cabecera {
+    background-color: map-get($colores, "color-terciario");
+    display: flex;
+    grid-area: cabecera;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-grow: initial;
+    flex-direction: column;
+}
+
+.navbar-nav .nav-item .nav-link {
     color: map-get($colores, "color-principal");
     font-size: 15px;
-    font-family: map-get($tipografia, letra-terciaria);
-    }
-.container-fluid{
-        display: flex;
-        color: blanchedalmond;
-        text-align: center;
-        font-size: 45px;
-        font-family: map-get($tipografia, letra-principal);
-        font-weight: 100px;
-        margin: 30px;
-        height: 100px;
-        width: 600px;
-    }
-.imagen__logo{
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 6px;
-    display: flex;
+    font-family: map-get($tipografia, "letra-secundaria");
 }
-.principal{
+
+h1 {
+    display: flex;
+    color: map-get($colores, "color-cuarto");
+    text-align: center;
+    font-size: 45px;
+    font-family: map-get($tipografia, "letra-terciaria");
+    font-weight: 100px;
+    margin: 30px;
+    height: 100px;
+    width: 600px;
+}
+
+.principal {
     grid-area: principal;
     padding: 10px;
 }
-.footer{
+
+.pie {
     background-color: map-get($colores, "color-terciario");
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     grid-area: pie;
     align-items: center;
     width: 100%;
+}
 
-    &__redes{
-        width: 40px;
-    }
+.pie__anchor {
+    width: 60px;
+    padding: 20px;
+    color: map-get($colores, "color-principal");
 }

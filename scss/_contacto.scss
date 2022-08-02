@@ -1,0 +1,28 @@
+.formulario {
+    margin: 50px;
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 300px;
+    border: solid 6px map-get($colores, "color-septimo");
+    width: fit-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: map-get($colores, "color-quinto");
+    line-height: 40px;
+    background-color: gray;
+
+    &__boton {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        padding: 15px;
+    }
+}

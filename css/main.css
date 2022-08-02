@@ -6,16 +6,21 @@
   height: 100%; }
 
 .cuerpo {
-  font-family: 'Faustina', serif;
   margin: 0 auto;
-  background-color: #65cdaa;
-  color: #2f4f4f;
   display: grid;
-  grid-template-areas: "cabecera"   "principal"   "pie";
-  grid-template-columns: 100%; }
+  grid-template-areas: "cabecera" "principal" "pie";
+  grid-template-columns: 100%;
+  background-color: #65cdaa;
+  color: #285d5d;
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 .cabecera {
-  background-color: #191971; }
+  background-color: #191971;
+  display: flex;
+  grid-area: cabecera;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center; }
 
 .navbar-collapse {
   flex-grow: initial;
@@ -26,9 +31,9 @@
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif; }
 
-.container-fluid {
+h1 {
   display: flex;
-  color: blanchedalmond;
+  color: #ffebcc;
   text-align: center;
   font-size: 45px;
   font-family: "Merienda", cursive;
@@ -37,33 +42,40 @@
   height: 100px;
   width: 600px; }
 
-.imagen__logo {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 6px;
-  display: flex; }
-
 .principal {
   grid-area: principal;
   padding: 10px; }
 
-.footer {
+.pie {
   background-color: #191971;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   grid-area: pie;
   align-items: center;
   width: 100%; }
-  .footer__redes {
-    width: 40px; }
+
+.pie__anchor {
+  width: 60px;
+  padding: 20px;
+  color: #65cdaa; }
 
 .titulo__presentacion {
-  height: 100px;
-  width: 60%;
+  height: 80px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
+
+h2 {
+  color: black;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+h3 {
+  color: blue;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 .Presentacion__fede {
   width: 100%;
@@ -71,38 +83,222 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around; }
+  .Presentacion__fede__texto {
+    display: flex;
+    color: midnightblue;
+    line-height: 30px;
+    text-align: left;
+    height: 30%;
+    padding: 20px; }
+  .Presentacion__fede__imagen {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px; }
 
-.Presentacion__fede__texto {
-  display: flex;
-  color: midnightblue;
-  line-height: 2;
-  text-align: left;
-  height: 30%;
-  padding: 20px; }
-
-.Presentacion__fede__imagen {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  border-radius: 8px; }
-
-.boton, .boton .boton__electricidad, .boton .boton__refrigeracion {
+.boton, .botonElectricidad, .botonRefrigeracion {
+  color: #00ffc8;
   display: flex;
   width: fit-content;
-  border: solid 3px gray;
-  border-radius: 6px;
   padding: 20px;
   margin: 30px auto; }
-  .boton_boton:hover {
+
+.boton :hover, .botonElectricidad :hover, .botonRefrigeracion :hover {
+  transform: scale(1, 4);
+  background-color: blanchedalmond;
+  transition: 3s; }
+
+.boton a, .botonElectricidad a, .botonRefrigeracion a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: 600;
+  font-size: 20px; }
+
+.botonElectricidad {
+  background-color: #80ff8a;
+  border: solid 3px gray;
+  border-radius: 6px;
+  margin: 10px; }
+
+.botonRefrigeracion {
+  background-color: antiquewhite;
+  border: solid 3px gray;
+  border-radius: 6px;
+  margin: 10px; }
+
+.titulo__electricidad {
+  height: 100px;
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.electricidad__domic {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+  .electricidad__domic__texto {
+    color: #191971;
+    display: flex;
+    line-height: 2;
+    text-align: left;
+    height: 40%;
+    padding: 20px; }
+  .electricidad__domic__img {
+    height: 300px;
+    display: flex;
+    width: 300px; }
+
+.electricidad__comer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+  .electricidad__comer__texto {
+    color: #191971;
+    display: flex;
+    line-height: 2;
+    text-align: left;
+    height: 40%;
+    padding: 20px; }
+  .electricidad__comer__img {
+    height: 300px;
+    display: flex;
+    width: 300px; }
+
+.electricidad__indus {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+  .electricidad__indus__texto {
+    color: #191971;
+    display: flex;
+    line-height: 2;
+    text-align: left;
+    height: 40%;
+    padding: 20px; }
+  .electricidad__indus__img {
+    height: 300px;
+    display: flex;
+    width: 300px; }
+
+.titulo__refrigeracion__subtitulo__lista {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .titulo__refrigeracion__subtitulo__lista__:hover {
     transform: scale(1, 4);
-    background-color: blanchedalmond;
+    background-color: #ffebcc;
     transition: 3s; }
-  .boton a, .boton .boton__electricidad a, .boton .boton__refrigeracion a {
-    text-decoration: none;
-    color: darkblue;
-    font-weight: 600;
-    font-size: 20px; }
-  .boton .boton__electricidad {
-    background-color: #65cdaa; }
-  .boton .boton__refrigeracion {
-    background-color: #134e4e; }
+
+.textoRefrig {
+  color: blue;
+  line-height: 2;
+  text-align: left; }
+
+.formulario {
+  margin: 50px;
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  justify-content: center; }
+
+.formulario__contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 300px;
+  border: solid 6px #ee81ee;
+  width: fit-content;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  line-height: 40px;
+  background-color: gray; }
+  .formulario__contacto__boton {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    padding: 15px; }
+
+.galeria {
+  display: flex;
+  background-color: beige; }
+
+.galeria__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px;
+  border: solid 2px black; }
+  .galeria__card__imagen {
+    display: flex;
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+    height: 200px; }
+  .galeria__card__body {
+    background-color: beige; }
+
+@media screen and (max-width: 500px) {
+  .cabecera {
+    background-color: #191971;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .logoandaluz {
+    padding: 50px; }
+  h1 {
+    font-size: 30px;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    justify-content: center; }
+  .principal {
+    display: flex; }
+  .Presentacion__fede {
+    flex-direction: column; }
+  .Presentacion__fede__imagen {
+    width: 80%;
+    height: auto; }
+  .boton, .botonElectricidad, .botonRefrigeracion {
+    display: flex;
+    flex-direction: column; }
+  .pie {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly; }
+  .pie__anchor {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly; }
+  .electricidad__domic {
+    flex-direction: column; }
+  .electricidad__comer {
+    flex-direction: column; }
+  .electricidad__indus {
+    flex-direction: column; }
+  .electricidad__domic__img {
+    width: 80%;
+    height: auto;
+    flex-direction: column; }
+  .electricidad__comer__img {
+    width: 80%;
+    height: auto;
+    flex-direction: column; }
+  .electricidad__indus__img {
+    width: 80%;
+    height: auto; }
+  .titulo__refrigeracion__subtitulo {
+    display: flex;
+    flex-direction: column;
+    width: 80%; } }

@@ -1,0 +1,87 @@
+@media screen and (max-width: 500px) {
+    .cabecera {
+        background-color: map-get($colores, "color-terciario");
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logoandaluz {
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        justify-content: center;
+    }
+
+    .principal {
+        display: flex;
+    }
+
+    .Presentacion__fede {
+        flex-direction: column;
+    }
+
+    .Presentacion__fede__imagen {
+        width: 80%;
+        height: auto;
+    }
+
+    .boton {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pie {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .pie__anchor {
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .electricidad__domic {
+        flex-direction: column;
+    }
+
+    .electricidad__comer {
+        flex-direction: column;
+    }
+
+    .electricidad__indus {
+        flex-direction: column;
+    }
+
+    .electricidad__domic__img {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .electricidad__comer__img {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .electricidad__indus__img {
+        width: 80%;
+        height: auto;
+    }
+
+    .titulo__refrigeracion__subtitulo {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}
