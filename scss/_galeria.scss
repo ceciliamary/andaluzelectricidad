@@ -1,0 +1,23 @@
+.galeria {
+    display: flex;
+    background-color: beige;
+}
+
+.galeria__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+    border: solid 2px map-get($colores, "color-quinto");
+
+    &__imagen {
+        display: flex;
+        width: 200px;
+        padding: 5px 5px 5px 5px;
+        height: 200px;
+    }
+
+    &__body {
+        background-color: beige;
+    }
+}

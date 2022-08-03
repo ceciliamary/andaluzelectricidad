@@ -1,0 +1,19 @@
+.titulo__refrigeracion__subtitulo__lista {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__:hover {
+        transform: scale(1, 4);
+        background-color: map-get($colores, "color-cuarto");
+        transition: 3s;
+    }
+}
+
+.textoRefrig {
+    color: map-get($colores, "color-sexto");
+    line-height: 2;
+    text-align: left;
+}

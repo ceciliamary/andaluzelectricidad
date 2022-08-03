@@ -1,0 +1,34 @@
+
+.boton{
+    color: rgb(0, 255, 200); 
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    margin: 30px auto;
+}
+.boton :hover{
+    transform: scale(1,4);
+    background-color: blanchedalmond;
+    transition: 3s;
+}
+.boton a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 600;
+    font-size: 20px;
+}
+.botonElectricidad{
+    @extend .boton; 
+    background-color: hsl(125, 100%, 75%);
+    border: solid 3px gray;
+    border-radius: 6px;
+    margin: 10px;
+    
+}
+.botonRefrigeracion{
+    @extend .boton;
+    background-color: antiquewhite;
+    border: solid 3px gray;
+    border-radius: 6px;
+    margin: 10px;
+}
