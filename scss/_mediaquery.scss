@@ -8,6 +8,7 @@
 
     .logoandaluz {
         padding: 50px;
+
     }
 
     h1 {
@@ -21,6 +22,8 @@
 
     .principal {
         display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 
     .Presentacion__fede {
@@ -84,4 +87,19 @@
         flex-direction: column;
         width: 80%;
     }
+    .titulo__refrigeracion__subtitulo__lista{
+        display: flex;
+        flex-direction: column;
+    }
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }
+    .galeria__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin:5px
+}
 }

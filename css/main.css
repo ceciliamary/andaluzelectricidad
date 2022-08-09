@@ -226,7 +226,7 @@ h3 {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 90%;
+    width: 100px;
     padding: 15px; }
 
 .galeria {
@@ -263,7 +263,9 @@ h3 {
     margin: 0%;
     justify-content: center; }
   .principal {
-    display: flex; }
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
   .Presentacion__fede {
     flex-direction: column; }
   .Presentacion__fede__imagen {
@@ -301,4 +303,16 @@ h3 {
   .titulo__refrigeracion__subtitulo {
     display: flex;
     flex-direction: column;
-    width: 80%; } }
+    width: 80%; }
+  .titulo__refrigeracion__subtitulo__lista {
+    display: flex;
+    flex-direction: column; }
+  .galeria {
+    display: flex;
+    flex-direction: column; }
+  .galeria__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 5px; } }
