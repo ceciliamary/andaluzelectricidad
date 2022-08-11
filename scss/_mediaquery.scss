@@ -8,9 +8,8 @@
 
     .logoandaluz {
         padding: 50px;
-
     }
-
+    
     h1 {
         font-size: 30px;
         margin: 0;
@@ -23,7 +22,7 @@
     .principal {
         display: flex;
         flex-direction: column;
-        margin: 0;
+        height: 80vh;
     }
 
     .Presentacion__fede {
@@ -99,7 +98,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 90%;
         margin:5px
-}
+    }
+    
 }

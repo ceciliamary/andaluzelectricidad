@@ -44,19 +44,20 @@ h1 {
 
 .principal {
   grid-area: principal;
-  padding: 10px; }
+  padding: 10px;
+  height: 100%; }
 
 .pie {
   background-color: #191971;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   grid-area: pie;
   align-items: center;
   width: 100%; }
 
 .pie__anchor {
-  width: 60px;
+  width: 10px;
   padding: 20px;
   color: #65cdaa; }
 
@@ -206,7 +207,6 @@ h3 {
 
 .formulario {
   margin: 50px;
-  width: 1000px;
   height: 400px;
   display: flex;
   justify-content: center; }
@@ -265,7 +265,7 @@ h3 {
   .principal {
     display: flex;
     flex-direction: column;
-    margin: 0; }
+    height: 80vh; }
   .Presentacion__fede {
     flex-direction: column; }
   .Presentacion__fede__imagen {
@@ -314,5 +314,5 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     margin: 5px; } }

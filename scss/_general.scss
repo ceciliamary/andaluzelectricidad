@@ -55,20 +55,21 @@ h1 {
 .principal {
     grid-area: principal;
     padding: 10px;
+    height: 100%;
 }
 
 .pie {
     background-color: map-get($colores, "color-terciario");
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     grid-area: pie;
     align-items: center;
     width: 100%;
 }
 
 .pie__anchor {
-    width: 60px;
+    width: 10px;
     padding: 20px;
     color: map-get($colores, "color-principal");
 }
