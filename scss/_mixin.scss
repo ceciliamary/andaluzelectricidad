@@ -1,5 +1,4 @@
-
-@mixin h ($colorLetra, $tamanoLetra){
+@mixin h ($colorLetra, $tamanoLetra) {
     color: $colorLetra;
     font-size: $tamanoLetra;
 }

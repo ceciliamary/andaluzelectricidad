@@ -7,10 +7,12 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
 h2 {
     @include h (hsl(0, 0%, 0%), (30px));
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 h3 {
     @include h (hsl(240, 100%, 50%), (20px));
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -27,7 +29,7 @@ h3 {
     &__texto {
         display: flex;
         color: midnightblue;
-        line-height: 30px;
+        line-height: 40px;
         text-align: left;
         height: 30%;
         padding: 20px;

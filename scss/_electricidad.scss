@@ -17,6 +17,7 @@
     &__texto {
         color: map-get($colores, "color-terciario");
         display: flex;
+        flex-direction: column;
         line-height: 2;
         text-align: left;
         height: 40%;
@@ -40,6 +41,7 @@
     &__texto {
         color: map-get($colores, "color-terciario");
         display: flex;
+        flex-direction: column;
         line-height: 2;
         text-align: left;
         height: 40%;
@@ -52,6 +54,7 @@
         width: 300px;
     }
 }
+
 .electricidad__indus {
     width: 100%;
     display: flex;
@@ -62,6 +65,7 @@
     &__texto {
         color: map-get($colores, "color-terciario");
         display: flex;
+        flex-direction: column;
         line-height: 2;
         text-align: left;
         height: 40%;

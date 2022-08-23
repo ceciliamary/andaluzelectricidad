@@ -9,7 +9,7 @@
     .logoandaluz {
         padding: 50px;
     }
-    
+
     h1 {
         font-size: 30px;
         margin: 0;
@@ -19,10 +19,13 @@
         justify-content: center;
     }
 
+    .cuerpo {
+        min-height: 100vh;
+    }
+
     .principal {
         display: flex;
         flex-direction: column;
-        height: 80vh;
     }
 
     .Presentacion__fede {
@@ -86,20 +89,27 @@
         flex-direction: column;
         width: 80%;
     }
-    .titulo__refrigeracion__subtitulo__lista{
+
+    .titulo__refrigeracion__subtitulo__lista {
         display: flex;
         flex-direction: column;
     }
-    .galeria{
+
+    .galeria {
         display: flex;
         flex-direction: column;
     }
+
     .galeria__card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 90%;
-        margin:5px
+        margin: 5px
     }
-    
+
+    .navbar-nav {
+        padding-left: 10px;
+    }
+
 }
